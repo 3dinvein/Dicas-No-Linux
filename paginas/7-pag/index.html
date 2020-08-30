@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Dicas No Linux</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="logo" class="centralizarHorizontalmente"><img src="logoTitulo.png" alt="logoTitulo"></section>
+  
+    <section id="subtitulo" class="centralizarHorizontalmente"><h2><center>ONDE FICA O DIRETÓRIO DAS FONTES DE TEXTO NO LINUX?</center></h2></section>
+    
+  <section id="conteudo">
+     <div id="texto">
+       <p><b>Primeiro</b> precisamos criar uma pasta personalizada para gente dentro da pasta fonts,
+        <br>no seguinte diretório  /usr/share/fonts/ e em seguida configurar o dono da pasta com suas permissões.</p>
+        <h2>COMANDO PARA CRIAR PASTA</h2>
+       sudo mkdir /usr/share/fonts/sua_pasta 
+       <br><br>
+       <h2>COMANDO PARA TROCAR O DONO DA PASTA</h2>
+       sudo chown -R seu_usuario:seu_usuario /usr/share/fonts/sua_pasta/ 
+
+       <p><b>Segundo</b> baixamos a fonte desejada e depois descompactamos, com o botão direito do mouse escolha a opção descompactar aqui</p>
+        <img src="copiar.jpg" alt="copiar" width="900">
+       <p>Depois de descompactado, copiamos o arquivo da fonte para nossa pasta personalizada que criamos.</p>
+       <img src="colar.jpg" alt="colar" width="900">
+       
+       <p><b>Terceiro e último</b> precisamos executar um comando no terminal para que nossa fonte seja reconhecida pelo sistema</p>
+       <h2>COMANDO PARA RECONHECER A NOSSA FONTE</h2>
+        sudo fc-cache -f -v
+      </div>
+      <p>Qualquer dúvida você pode assistir ao meu video, para entender melhor.</p>
+      <br>
+      <br>
+      <iframe width="853" height="480" src="https://www.youtube.com/embed/6TJHTE6K9cA?list=PL29O-BKxbiTuBlyn8pLzNiO31Wlukl6-P" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br>
+      <br>
+      <br>
+      <a href="../../"><p>VOLTAR</p></a> 
+  </section>
+
+  <section id="fundoRodape" class="centralizarHorizontalmente">
+    <section id="rodape" class="centralizarVerticalmente">
+      <p>Copyright &copy; 2020 3D Na Veia</p>
+    </section>
+  </section>
+  </body>
+</html>

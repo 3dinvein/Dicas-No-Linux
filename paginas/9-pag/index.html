@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Dicas No Linux</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="logo" class="centralizarHorizontalmente"><img src="logoTitulo.png" alt="logoTitulo"></section>
+  
+    <section id="subtitulo" class="centralizarHorizontalmente"><h2><center>CRIANDO ATALHO DO SEU PROGRAMA DENTRO DAS CATEGORIAS DO LINUX</center></h2></section>
+    
+  <section id="conteudo">
+    <div id="texto">
+      <p>
+        Para criar o atalho dentro das categorias do linux, é preciso definir o diretório que seu programa vai ficar, 
+        definir o seu executável, definir o icone para aparecer na categoria desejada e o mais importante que é
+        definir em qual categoria o seu programa se encontra. <br>
+       <b>Observação:</b> Os nomes das categorias são sempre em inglês.
+      </p>
+
+      <p>
+        Depois dos requisitos acima, criar um arquivo relacionado ao nome do seu programa, e com extensão .desktop. 
+       <b>Por exemplo: piskel.desktop</b><br> 
+       Esse arquivo tem que ser criado dentro do seguinte diretório: <b>/usr/share/applications/</b><br><br>
+       O conteúdo desse arquivo como exemplo, está logo abaixo, mas também possuo um video sobre esse mesmo tema.
+      </p>
+
+
+       <p align="left">
+        
+        [Desktop Entry] <b># Começamos declarando a entrada</b> <br>
+        Name=Piskel <b># Nome do programa</b> <br>
+        Comment=Piskel 0.14 <b># Coloque um comentário</b> <br>
+        GenericName=Piskel <b># Caso o primeiro nome der pau tem esse nome genérico</b><br>
+        TryExec=/opt/Piskel-0.14.0-64bits/piskel <b># Opcional - tenta executar o executável</b><br>
+        Exec=/opt/Piskel-0.14.0-64bits/piskel <b># Caminho do executável</b><br>
+        Icon=/opt/Piskel-0.14.0-64bits/piskel.png <b># Icone do programa, detalhe: 512px : 512px</b><br>
+        Terminal=false <b># true = "executar no terminal" ou false = "não executar no terminal"</b><br>
+        Type=Application <b># Tipo da aplicação, por exemplo: é imagem ou programa</b><br>
+        Categories=Graphics; <b># São categorias que existem no seu menu inicial do seu linux</b><br>
+        StartupNotify=true <b># Opcional</b><br>
+        NoDisplay=false <b># Opcional</b><br>
+        #MimeType=application/octet-strea <br>
+        MimeType=application/x-piskel <b># Serve pra fixar o tipo de aplicação - Considere Opcional</b><br>
+       </p>
+    </div>
+    <p>Para mais detalhes assistir na prática no vídeo abaixo:</p>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/SOW3uqM0um4?list=PL29O-BKxbiTuBlyn8pLzNiO31Wlukl6-P" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <br>
+    <br>
+   <a href="../../"><p>VOLTAR</p></a> 
+  </section>
+
+  <section id="fundoRodape" class="centralizarHorizontalmente">
+    <section id="rodape" class="centralizarVerticalmente">
+      <p>Copyright &copy; 2020 3D Na Veia</p>
+    </section>
+  </section>
+  </body>
+</html>

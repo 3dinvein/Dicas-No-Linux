@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Dicas No Linux</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="logo" class="centralizarHorizontalmente"><img src="logoTitulo.png" alt="logoTitulo"></section>
+  
+    <section id="subtitulo" class="centralizarHorizontalmente"><h2>FILA DE ENVIO E RECEBIMENTO DE EMAIL</h2></section>
+    
+  <section id="conteudo">
+    
+    <div id="texto">
+      <p><b>Observação: </b>
+        <br> 
+        Os comandos realizados no teminal linux são sempre em minúsculo. <br>
+        Para fixar na mente de vocês o que é fila de email, lembrem disso: <br>
+        A fila é igual a pasta temp, onde possuiem arquivos temporários parados lá.
+        </p>
+        <br>
+        <br>
+      <h2><b>COMANDO MAILQ OU POSTQUEUE -P</b></h2> 
+     <p>
+      <b>Retorna a fila de envio e recebimento de email</b>, com dados como o id e o email da pessoa que enviou ou a que era pra receber, as vezes vem os dois juntos.
+       Normalmente, quando um email vai parar na fila de envio e recebimento, é por que há um erro no email, então precisamos analisar
+       o email enviado e o email recebido para que possamos remover o email errado.  
+     </p>
+     <h2><b>COMANDO POSTQUEUE -F</b></h2> 
+     <p>
+      <b>Pára com o serviço da fila de email</b>, é usado mais quando queremos analisar mais profundamente o registro de email,
+      fazendo uma cópia do registro e etc...  
+     </p>
+     <h2><b>COMANDO POSTSUPER -D ID</b></h2> 
+     <p>
+      <b>Esse comando exclui o email da fila que está trancando o fluxo</b>,
+      é usado muito usado por mim mesmo, é esse e o próximo comando.  
+     </p>
+     <h2><b>COMANDO POSTSUPER -D ALL</b></h2> 
+     <p>
+      <b>Esse comando exclui todos os emails da fila que está trancando o fluxo</b>,
+      é usado quando não temos mais dúvidas sobre o email se é importante ou não.   
+     </p>
+     <p>
+      <b>Assista ao vídeo para mais detalhes:</b>
+    </p>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/0gKLYLPUDss?list=PL29O-BKxbiTuBlyn8pLzNiO31Wlukl6-P" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <br>
+    <br>
+   <a href="../../"><p>VOLTAR</p></a> 
+  </section>
+
+  <section id="fundoRodape" class="centralizarHorizontalmente">
+    <section id="rodape" class="centralizarVerticalmente">
+      <p>Copyright &copy; 2020 3D Na Veia</p>
+    </section>
+  </section>
+  </body>
+</html>

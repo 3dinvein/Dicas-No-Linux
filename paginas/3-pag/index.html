@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Dicas No Linux</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="logo" class="centralizarHorizontalmente"><img src="logoTitulo.png" alt="logoTitulo"></section>
+  
+    <section id="subtitulo" class="centralizarHorizontalmente"><h2><center>COMO INSTALAR O CODEBLOCKS 20.03 E O FREEGLUT OPENGL NO LUBUNTU 20.04</center></h2></section>
+    
+  <section id="conteudo">
+    <div id="texto">
+      <p><b>Observação:</b> A distribuição que utilizei na dica logo abaixo foi o Lubuntu 20.04 Lxqt</p>
+     
+      
+     <p> <b># INSTALAR O CODEBLOCKS</b></p>
+      sudo apt install codeblocks<br>
+      sudo apt install libxxf86vm-dev<br>
+      sudo apt install build-essential<br>
+      <br><br>
+
+    <p>
+    # baixar a biblioteca <b>gconio.h</b> porque o conio.h não tem pra linux. Link para <b>download</b> logo abaixo:<br><a href="http://www.wence.vandermeersch.org/gconio/gconio.h">http://www.wence.vandermeersch.org/gconio/gconio.h</a> 
+    <br>
+    <br> 
+    <br>
+    # depois copiar a biblioteca <b>gconio.h</b> e colar nesse diretório <b>/usr/include/gconio.h</b>
+    <br>
+    sudo cp /home/usuario/Download/gconio.h &nbsp; /usr/include/gconio.h
+    <br>
+  </p>
+   <b># PARA INSTALAR O FREEGLUT3 PARA PROGRAMAÇÃO GRÁFICA USANDO O OPENGL</b><br><br>
+        sudo apt install freeglut3 freeglut3-dev <br>
+        sudo ln -s /usr/lib/x86_64-linux-gnu/libglut.so.3.9.0 /usr/lib/libglut.so.3.9.0 <br>
+        sudo ln -s /usr/lib/x86_64-linux-gnu/libglut.so.3 /usr/lib/libglut.so.3 <br>
+        sudo ln -s /usr/lib/x86_64-linux-gnu/libglut.so /usr/lib/libglut.so <br><br>
+    
+    </div>
+     <br>
+     <p>Veja o vídeo abaixo para maior compreensão</p>
+     <iframe width="853" height="480" src="https://www.youtube.com/embed/qLV9Wwmv4Aw?list=PL29O-BKxbiTuBlyn8pLzNiO31Wlukl6-P" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <a href="../../"><p>VOLTAR</p></a> 
+  </section>
+
+  <section id="fundoRodape" class="centralizarHorizontalmente">
+    <section id="rodape" class="centralizarVerticalmente">
+      <p>Copyright &copy; 2020 3D Na Veia</p>
+    </section>
+  </section>
+  </body>
+</html>
